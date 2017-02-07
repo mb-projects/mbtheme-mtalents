@@ -1,0 +1,21 @@
+{
+  "name": "mbtheme",
+  "description": "Starter Theme for WordPress with modular system",
+  "main": "index.php",
+  "authors": [
+    "Bahrul Uluma"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wordpress"
+  ],
+  "homepage": "https://github.com/bahrul221/mbtheme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

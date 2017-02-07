@@ -1,0 +1,23 @@
+{
+  "name": "mbtheme",
+  "version": "1.0.0-alpha.1",
+  "description": "Starter Theme for WordPress with modular system",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrul221/mbtheme.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Bahrul Uluma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahrul221/mbtheme/issues"
+  },
+  "homepage": "https://github.com/bahrul221/mbtheme#readme",
+  "devDependencies": {}
+}

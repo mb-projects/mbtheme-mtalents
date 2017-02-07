@@ -1,2 +1,2 @@
 # mbtheme
-WordPress Theme Framework with modular system
+Starter Theme for WordPress with modular system
