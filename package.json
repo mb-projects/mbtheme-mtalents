@@ -19,5 +19,11 @@
     "url": "https://github.com/bahrul221/mbtheme/issues"
   },
   "homepage": "https://github.com/bahrul221/mbtheme#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "bootstrap-sass": "git://github.com/bahrul221/bootstrap-sass.git#mbtheme-dev",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

@@ -1,0 +1,7 @@
+{
+    "js": [
+        "src/js/script.js",
+        "inc/modules/posts/js/script.js",
+        "inc/modules/comments/js/script.js"
+    ]
+}

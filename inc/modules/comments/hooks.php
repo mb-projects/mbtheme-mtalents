@@ -9,7 +9,7 @@ if ( !function_exists( 'mbtheme_comments_template' ) ) {
      * get comments template
      */
     function mbtheme_comments_template() {
-        mbtheme_module_get_template_parts( 'comments', 'comments' );
+        mbtheme_module_template( 'comments', 'comments' );
     }
 
 }
