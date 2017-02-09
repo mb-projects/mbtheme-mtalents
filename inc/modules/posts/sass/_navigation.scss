@@ -1,0 +1,45 @@
+.post-navigation{
+    .nav-links{
+        @include clearfix;
+    }
+    .nav-previous, .nav-next{
+        >a{
+            display: inline-block;
+        }
+    }
+    .nav-previous{
+        float: right;
+        margin-left: 15px;
+        >a{
+        }
+    }
+    .nav-next{
+        float: left;        
+        margin-right: 15px;
+        margin-bottom: 10px;
+        >a{
+        }
+    }
+}
+
+.posts-navigation{
+    .nav-links{
+        @include clearfix;
+        .nav-previous, .nav-next{
+            margin-bottom: 10px;
+            >a{
+            }
+        }
+        .nav-previous {
+            float: right;
+            margin-left: 15px;
+            > a{
+            }
+        }
+        .nav-next {
+            float: left;
+            > a{
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.number-pagination{
+    .nav-links{
+        .page-numbers{
+            &.current{
+            }
+        }
+        a.page-numbers{
+            &:hover, &:focus{
+            }
+        }
+    }
+}

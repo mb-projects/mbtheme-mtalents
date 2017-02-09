@@ -1,0 +1,45 @@
+.comments-area{
+    // ul
+    .comment-list{ 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        //li
+        .comment{ 
+            margin-top: 20px;
+            .comment-body{
+                .comment-meta{
+
+                }
+                .comment-author{
+                    .avatar{
+
+                    }
+                    .fn{
+
+                    }
+                    .says{
+
+                    }
+                }
+                .comment-metadata{
+
+                }
+            }
+            .comment-content{
+
+            }
+            .reply{
+                a{
+
+                }                
+            }
+        }
+        // ul
+        .children{
+            padding-left: 20px;
+            margin: 0;
+            list-style: none;
+        }
+    }
+}
