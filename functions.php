@@ -64,12 +64,12 @@ function mbtheme_enqueue_scripts() {
     // Fires before enqueue main styles and scripts
     do_action( 'mbtheme_enqueue_scripts_before_main' );
 
+    // bootstrap stylesheet
+    wp_enqueue_style( 'mbtheme-bootstrap-style', MBTHEME_URI_ASSETS . '/css/bootstrap.css' );
     // Theme stylesheet
     wp_enqueue_style( 'mbtheme-theme-stylesheet', get_stylesheet_uri() );
     // main stylesheet
     wp_enqueue_style( 'mbtheme-style', MBTHEME_URI_ASSETS . '/css/style.css' );
-    // bootstrap stylesheet
-    wp_enqueue_style( 'mbtheme-bootstrap-style', MBTHEME_URI_ASSETS . '/css/bootstrap.css' );
 
     // bootstrap script
     wp_enqueue_script( 'mbtheme-bootstrap-script', MBTHEME_URI_ASSETS . '/js/bootstrap.min.js', array( 'jquery' ), false, true );
