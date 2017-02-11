@@ -1,0 +1,42 @@
+$brand-title-font-size: 20px;
+$brand-title-desc-font-size: 20px;
+$brand-desc-font-size: 14px;
+
+$brand-title-line-height: 20px;
+$brand-title-desc-line-height: 20px;
+$brand-title-spacer: 5px;
+$brand-desc-line-height: 15px;
+
+$brand-logo-height: 40px;
+
+.navbar-brand{
+    padding-top: ( $navbar-height - $brand-title-line-height ) / 2;
+    padding-bottom: ( $navbar-height - $brand-title-line-height ) / 2;
+    .site-title{
+        margin-bottom: 0;
+        font-size: $brand-title-font-size;
+        line-height: $brand-title-line-height;
+    }
+    .site-description{
+        margin-top: $brand-title-spacer;
+        margin-bottom: 0;
+        font-size: $brand-desc-font-size;
+        line-height: $brand-desc-line-height;
+    }
+    &.has-description{
+        padding-top: ( $navbar-height - ($brand-title-desc-line-height + $brand-desc-line-height + $brand-title-spacer) ) / 2;
+        padding-bottom: ( $navbar-height - ($brand-title-desc-line-height + $brand-desc-line-height + $brand-title-spacer) ) / 2;
+    }
+    &.has-custom-logo{
+        padding-top: ( $navbar-height - $brand-logo-height ) / 2;
+        padding-bottom: ( $navbar-height - $brand-logo-height ) / 2;
+        >a.custom-logo-link{
+            display: inline-block;
+            height: 100%;
+        }
+        img.custom-logo{
+            max-height: 100%;
+            width: auto;
+        }
+    }
+}
