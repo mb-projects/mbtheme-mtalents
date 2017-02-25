@@ -1,6 +1,11 @@
 button.navbar-toggle{
     padding: 9px 10px;
+    background-color: transparent;
     @media (min-width: $grid-float-breakpoint) {
         display: none;
+    }
+    .icon-bar{
+        width: 27px;
+        height: 3px;
     }
 }

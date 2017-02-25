@@ -1,0 +1,24 @@
+
+// Colors
+
+$brand-color-1: #e1e179;
+$brand-color-2: #959737;
+
+$brand-primary: $brand-color-1;
+
+// navbar
+$navbar-height: 100px;
+$navbar-margin-bottom: 30px;
+
+$navbar-inverse-bg: transparent;
+$navbar-inverse-color: #fff;
+$navbar-inverse-border: transparent;
+
+$navbar-inverse-link-color: $navbar-inverse-color;
+$navbar-inverse-link-hover-color: $brand-primary;
+
+$navbar-inverse-link-active-color: $brand-primary;
+
+$navbar-inverse-toggle-hover-bg:            transparent !default;
+$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+$navbar-inverse-toggle-border-color:        transparent !default;
