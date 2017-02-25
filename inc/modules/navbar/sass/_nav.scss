@@ -1,0 +1,25 @@
+// Default navbar
+.navbar-default {
+    .navbar-nav {
+        // .active
+        > .current-menu-item > a {
+            &, &:hover, &:focus {
+                color: $navbar-default-link-active-color;
+                background-color: $navbar-default-link-active-bg;
+            }
+        }
+    }
+}
+
+// Inverse navbar
+.navbar-inverse {
+    .navbar-nav {
+        // .active
+        > .current-menu-item > a {
+            &, &:hover, &:focus {
+                color: $navbar-inverse-link-active-color;
+                background-color: $navbar-inverse-link-active-bg;
+            }
+        }
+    }
+}
