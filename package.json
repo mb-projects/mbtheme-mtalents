@@ -1,14 +1,14 @@
 {
-  "name": "mbtheme",
-  "version": "1.0.0-alpha.1",
-  "description": "Starter Theme for WordPress with modular system",
+  "name": "mtalents",
+  "version": "1.0.0",
+  "description": "M-Talents project",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahrul221/mbtheme.git"
+    "url": "git+https://github.com/mb-projects/mbtheme-mtalents.git"
   },
   "keywords": [
     "wordpress"
@@ -16,9 +16,9 @@
   "author": "Bahrul Uluma",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bahrul221/mbtheme/issues"
+    "url": "https://github.com/mb-projects/mbtheme-mtalents/issues"
   },
-  "homepage": "https://github.com/bahrul221/mbtheme#readme",
+  "homepage": "https://github.com/mb-projects/mbtheme-mtalents#readme",
   "devDependencies": {
     "bootstrap-sass": "git://github.com/bahrul221/bootstrap-sass.git#mb-custom",
     "grunt": "^1.0.1",
