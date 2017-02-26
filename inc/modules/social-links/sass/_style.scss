@@ -1,0 +1,16 @@
+// footer links
+.social-links-footer{
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        @include font-size(1.625);
+        margin-right: 15px;
+        >a{
+            color: #fff;
+            &:hover, &:focus{
+                color: $brand-color-1;
+            }
+        }
+    }
+}
