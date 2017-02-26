@@ -1,5 +1,6 @@
 <?php
 // get page thumbnail image if it is a page
+$bg_url = '';
 if ( is_home() ) {
     $bg     = mbtheme_get_option( 'header-bg-blog', array() );
     $bg_url = $bg[ 'url' ];
