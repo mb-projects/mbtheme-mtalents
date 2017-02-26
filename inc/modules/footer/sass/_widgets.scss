@@ -1,0 +1,31 @@
+.footer-widget{
+    margin-bottom: 25px;
+    line-height: 1.6;
+    .footer-widget-title{
+        margin-bottom: 20px;
+        @include font-size(1.5);
+        color: $brand-color-1;
+    }
+}
+
+ul.contact-list{
+    padding: 0;
+    list-style: none;
+    >li{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        &:before{
+            @include fa;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: $brand-color-1;
+        }
+    }
+}
+
+.footer-bottom-widget{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}

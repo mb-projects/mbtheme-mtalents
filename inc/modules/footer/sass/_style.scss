@@ -1,0 +1,20 @@
+.site-footer{
+    padding-top: 70px;
+    background-color: $gray-dark;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    .site-footer-bottom{
+        border-top: solid 1px #7a7a7a;
+        padding-top: 20px;
+    }
+    .copyright{
+        text-align: center;
+        @include font-size(0.875);
+    }
+}
+
+
+
+@import 'widgets';
