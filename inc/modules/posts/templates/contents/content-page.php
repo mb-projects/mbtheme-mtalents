@@ -20,11 +20,6 @@
 
     </header><!-- .entry-header -->
 
-    <?php
-    // thumbnail
-    mbtheme_module_template( 'posts', 'parts/thumbnail' );
-    ?>
-
     <div class="entry-content">
         <?php
         // content

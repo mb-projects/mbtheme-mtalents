@@ -24,7 +24,7 @@ if ( !function_exists( 'mbtheme_navbar' ) ) {
     }
 
 }
-add_action( 'mbtheme_site_header', 'mbtheme_navbar', 9 );
+add_action( 'mbtheme_site_header_inner', 'mbtheme_navbar', 5 );
 
 if ( !function_exists( 'mbtheme_navbar_nav_menu_item_title' ) ) {
 
