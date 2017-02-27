@@ -4,7 +4,7 @@ $screen-archive-breakpoint: 650px;
     text-align: center;
 }
 
-.entry-archive{
+.entry-archive, .entry-single{
     width: 860px;
     max-width: 100%;
     margin: 0 auto 40px;
@@ -22,7 +22,7 @@ $screen-archive-breakpoint: 650px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .entry-archive-inner{
+    .entry-inner{
         position: relative;
         padding: 20px;
         @media(min-width: $screen-archive-breakpoint){
@@ -32,12 +32,17 @@ $screen-archive-breakpoint: 650px;
         background-color: #fff;
         border: solid 1px rgba(0,0,0,0.1);
         text-align: center;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
     }
     .entry-header{
         margin-bottom: 20px;
     }
     .entry-title{
         @include font-size(1.125);
+        font-weight: 600;
         >a{
             color: #313030;
             &:hover, &:focus{
@@ -68,6 +73,7 @@ $screen-archive-breakpoint: 650px;
         display: inline-block;
         @include font-size(1.375);
         color: $gray-light;
+        text-align: center;
         @include transition(all 0.3s);
         @media(min-width: $screen-archive-breakpoint){
             position: absolute;

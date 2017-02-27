@@ -1,3 +1,5 @@
+$screen-single-breakpoint: 992px;
+
 .entry-single, .entry-page{
     .entry-header{
     }
@@ -12,7 +14,7 @@
     .entry-content{
     }
     .entry-footer{
-        
+
     }
     .entry-tags{
         >a{
@@ -21,8 +23,20 @@
 }
 
 .entry-single{
+    @media(min-width: $screen-single-breakpoint){
+        padding: 0 50px;
+    }
+    .entry-inner{
+        background-color: #fafafa;
+        text-align: initial;
+    }
+    .entry-thumbnail{
+        @media(min-width: $screen-single-breakpoint){
+            margin: 0 -50px;
+        }
+    }
     .entry-header{
-
+        margin-bottom: 25px;
     }
     .entry-title{
 
@@ -30,13 +44,15 @@
     .entry-meta{
 
     }
-    .entry-thumbnail{
-
-    }
     .entry-content{
 
     }
     .entry-footer{
 
+    }
+    .post-edit-link{
+        @media(min-width: $screen-single-breakpoint){
+            right: -51px;
+        }
     }
 }

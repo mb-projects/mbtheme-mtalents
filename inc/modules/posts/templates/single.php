@@ -10,7 +10,7 @@ while ( have_posts() ) : the_post();
     mbtheme_module_template( 'posts', 'contents/content-single', get_post_format() );
 
     // displays post navigation
-    mbtheme_post_navigation();
+    // mbtheme_post_navigation();
 
     // If comments are open or we have at least one comment, load up the comment template.
     if ( comments_open() || get_comments_number() ) {

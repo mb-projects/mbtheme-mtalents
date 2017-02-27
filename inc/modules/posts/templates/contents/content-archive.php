@@ -11,10 +11,9 @@
     $thumb_style = ( $thumb_url ) ? 'background-image: url("' . esc_url( $thumb_url ) . '");' : '';
     ?>
     <div class="entry-thumbnail" style="<?php echo esc_attr( $thumb_style ); ?>">
-
     </div>
 
-    <div class="entry-archive-inner">
+    <div class="entry-inner">
 
         <header class="entry-header">
             <?php
