@@ -1,0 +1,7 @@
+a{
+    color: $brand-color-2;
+    @include transition(color 0.3s);
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
