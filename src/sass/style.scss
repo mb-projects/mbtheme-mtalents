@@ -6,5 +6,8 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "bootstrap/mixins";
 
+/* Theme */
+@import 'theme/layout';
+
 /* Modules */
 @import "../../inc/modules/modules";
