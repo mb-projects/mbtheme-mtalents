@@ -22,7 +22,7 @@ if ( have_posts() ) :
     endwhile;
 
     // displays post navigation
-    mbtheme_posts_navigation();
+    mbtheme_posts_navigation_numbers();
 
 else :
 

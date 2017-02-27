@@ -1,11 +1,21 @@
 .number-pagination{
+    text-align: center;
     .nav-links{
         .page-numbers{
+            display: inline-block;
+            min-width: 40px;
+            line-height: 38px;
+            padding: 0 5px;
+            border: solid 1px $gray-lighter;
             &.current{
+                color: #fff;
+                background-color: $brand-color-2;
             }
         }
         a.page-numbers{
+            @include transition(all 0.3s);
             &:hover, &:focus{
+                background-color: $gray-lighter;
             }
         }
     }

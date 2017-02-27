@@ -1,27 +1,86 @@
-.taxonomy-header{
-    .taxonomy-title{
-    }
-    .taxonomy-description{
-    }
+$screen-archive-breakpoint: 650px;
+
+.archive-header{
+    text-align: center;
 }
 
 .entry-archive{
-    .entry-header{
-
-    }
-    .entry-title{
-    }
-    .entry-meta{
+    width: 860px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    @media(min-width: $screen-archive-breakpoint){
+        padding: 0 25px;
     }
     .entry-thumbnail{
-        img{
+        height: 300px;
+        @media(min-width: $screen-archive-breakpoint){
+            height: 400px;
+            margin: 0 -25px;
         }
+        background-color: #f6f7f8;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .entry-archive-inner{
+        position: relative;
+        padding: 20px;
+        @media(min-width: $screen-archive-breakpoint){
+            margin: -30px auto 0;
+            padding: 30px;
+        }
+        background-color: #fff;
+        border: solid 1px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .entry-header{
+        margin-bottom: 20px;
+    }
+    .entry-title{
+        @include font-size(1.125);
+        >a{
+            color: #313030;
+            &:hover, &:focus{
+                color: $link-color;
+            }
+        }
+    }
+    .entry-meta{
+        margin-bottom: 10px;
+        @include font-size(0.875);
     }
     .entry-content{
         p{
         }
     }
     .entry-readmore{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: $text-color;            
+        @include transition(all 0.3s);
+        &:hover, &:focus{
+            border-color: transparent;
+            background-color: $brand-color-2;
+            color: #fff;            
+        }
+    }
+    .post-edit-link{
+        display: inline-block;
+        @include font-size(1.375);
+        color: $gray-light;
+        @include transition(all 0.3s);
+        @media(min-width: $screen-archive-breakpoint){
+            position: absolute;
+            top: -1px;
+            right: -26px;
+            width: 50px;
+            line-height: 50px;
+            background-color: #f6f7f8;
+            &:hover, &:focus{
+                background-color: $brand-color-2;
+                color: #fff;
+            }
+        }
 
     }
     .entry-footer{
