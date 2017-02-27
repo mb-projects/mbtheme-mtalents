@@ -1,0 +1,40 @@
+div.sharedaddy{
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: solid 1px #ececec;
+    text-align: center;
+    .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button{
+        background-color: transparent;
+        color: #cbcbcb !important;
+        &:hover, &:focus{
+            color: $link-color !important;            
+        }
+    }
+    .sd-content ul li{
+        a.sd-button:before{
+            @include font-size(1.5);
+        }
+        &.share-facebook, &.share-linkedin{
+            a.sd-button:before{
+                @include fa;
+                @include font-size(1.5);
+            }            
+        }
+        &.share-facebook{
+            a.sd-button:before{
+                content: "\f09a";
+            }
+        }
+        &.share-linkedin{
+            a.sd-button:before{
+                content: "\f0e1";
+            }
+        }
+    }
+}
+.sd-social-icon .sd-content ul li[class*='share-'].share-facebook a.sd-button{
+    
+}
+.sd-content ul li a.sd-button:before{
+    
+}
