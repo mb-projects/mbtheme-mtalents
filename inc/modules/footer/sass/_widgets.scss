@@ -5,12 +5,14 @@
         margin-bottom: 20px;
         @include font-size(1.5);
         color: $brand-color-1;
+        font-family: $font-family-open-sans;
     }
 }
 
 ul.contact-list{
     padding: 0;
     list-style: none;
+    font-family: $font-family-proxima-nova;
     >li{
         position: relative;
         padding-left: 30px;
