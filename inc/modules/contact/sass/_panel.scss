@@ -1,0 +1,40 @@
+.contact-panel{
+    display: table;
+    table-layout: fixed;
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    &-icon, &-content{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &-content{
+        padding: 15px;
+        border: solid 2px #e3e3e3;
+        border-left: none;
+        text-align: center;
+        @include font-size(0.875);
+        p{
+            margin-bottom: 5px;
+        }
+    }
+    &-icon{
+        width: 100px;
+        height: 85px;
+        background-color: #fc753b;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        &-phone{
+            background-image: url("../images/icon-phone.png");
+        }
+        &-email{
+            background-image: url("../images/icon-email.png");
+            background-color: #da3385;
+        }
+        &-map-marker{
+            background-image: url("../images/icon-map-marker.png");
+            background-color: #9f58dc;
+        }
+    }
+}

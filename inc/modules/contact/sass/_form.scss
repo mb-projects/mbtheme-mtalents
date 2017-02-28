@@ -1,0 +1,20 @@
+.mtalents-contact-form{
+    @include font-size(0.875);
+    .form-group{
+        margin-bottom: 30px;
+    }
+    select, textarea, input[type="text"], input[type="email"]{
+        @include placeholder(#606060);
+        @include box-shadow(none);
+    }
+    .wpcf7-captchar{
+        display: inline-block;
+        width: 300px;
+        max-width: 70%;
+    }
+    span.wpcf7-not-valid-tip{
+        margin-top: 3px;
+        font-size: 90%;
+        color: $brand-danger;
+    }
+}
