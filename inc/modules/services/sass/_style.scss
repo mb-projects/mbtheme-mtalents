@@ -1,0 +1,41 @@
+.mtalents-services{
+    .service-item{
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        padding: 50px 20px 30px;
+        border-radius: 8px;
+        background-color: $brand-color-1;
+        color: #fff;
+        text-align: center;
+        >a{
+            color: #fff;
+        }
+        .service-icon{
+            display: inline-block;
+            position: absolute;
+            top: -31px;
+            width: 62px;
+            height: 62px;
+            background-color: #fff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            @include box-shadow(0 0 10px 1px rgba(0, 0, 0, 0.1));
+            @include translate(-50%, 0);
+        }
+        .service-title{
+            margin-bottom: 15px;
+            font-family: $font-family-proxima-nova;
+            @include font-size(1.25);
+        }
+        .service-desc{
+            margin-bottom: 15px;
+            @include font-size(0.875);
+        }
+        .service-link{
+            @include font-size(0.875);
+            font-weight: 600;
+        }
+    }
+}
