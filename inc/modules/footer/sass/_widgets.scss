@@ -4,7 +4,7 @@
     .footer-widget-title{
         margin-bottom: 20px;
         @include font-size(1.5);
-        color: $brand-color-1;
+        color: $brand-color-2;
         font-family: $font-family-open-sans;
     }
 }
@@ -22,7 +22,7 @@ ul.contact-list{
             position: absolute;
             left: 0;
             top: 4px;
-            color: $brand-color-1;
+            color: $brand-color-2;
         }
     }
 }

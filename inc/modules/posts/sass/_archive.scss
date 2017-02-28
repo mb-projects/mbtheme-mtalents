@@ -46,7 +46,7 @@ $screen-archive-breakpoint: 650px;
         >a{
             color: #313030;
             &:hover, &:focus{
-                color: $link-color;
+                color: $brand-color-1;
             }
         }
     }
@@ -65,7 +65,7 @@ $screen-archive-breakpoint: 650px;
         @include transition(all 0.3s);
         &:hover, &:focus{
             border-color: transparent;
-            background-color: $brand-color-2;
+            background-color: $brand-color-1;
             color: #fff;            
         }
     }
@@ -83,7 +83,7 @@ $screen-archive-breakpoint: 650px;
             line-height: 50px;
             background-color: #f6f7f8;
             &:hover, &:focus{
-                background-color: $brand-color-2;
+                background-color: $brand-color-1;
                 color: #fff;
             }
         }
