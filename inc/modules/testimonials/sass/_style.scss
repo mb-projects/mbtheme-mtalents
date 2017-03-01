@@ -1,0 +1,26 @@
+.testimonial-panel{
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: $brand-color-1;
+    color: #fff;
+    text-align: center;
+    .testimonial{
+        &-photo{
+            width: 75px;
+            height: 75px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            @include material-shadow(2);
+        }
+        &-title{
+            margin-bottom: 15px;
+            font-family: $font-family-proxima-nova;
+            font-weight: bold;
+        }
+        &-content{
+            @include font-size(0.875);
+        }
+    }
+    
+}
