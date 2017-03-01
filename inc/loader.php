@@ -48,6 +48,9 @@ foreach ( glob( MBTHEME_DIR_MODULES . '/*/' ) as $module_load ) {
     if ( file_exists( $module_load . 'options.php' ) ) {
         include_once $module_load . 'options.php';
     }
+    if ( file_exists( $module_load . 'posts.php' ) ) {
+        include_once $module_load . 'posts.php';
+    }
     if ( file_exists( $module_load . 'shortcodes.php' ) ) {
         include_once $module_load . 'shortcodes.php';
     }
