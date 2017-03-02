@@ -32,6 +32,8 @@ class MBDL_Meta_Box {
 		add_action( 'add_meta_boxes', array( $this, 'register' ) );
 		// add action to save post meta
 		add_action( 'save_post', array( $this, 'save' ) );
+
+		$this->admin_form = new MBDL_Admin_Form( $this->fields, array(), $this->id );
 	}
 
 	/**
@@ -56,19 +58,18 @@ class MBDL_Meta_Box {
 	 * Display Fields
 	 */
 	protected function displayFields( $post ) {
-		$values = $this->getValues( $post->ID );
-
 		// render admin form
-		$this->admin_form = new MBDL_Admin_Form( $this->fields, $values, $this->id );
+		$values = $this->getValues( $post->ID );
+		$this->admin_form->setValues( $values );
 		$this->admin_form->render();
 	}
 
 	/**
 	 * Add fields to meta box
 	 */
-	public function addFields( $fields ) {
-		$this->fields = array_merge( $this->fields, $fields );
-	}
+//	public function addFields( $fields ) {
+//		$this->fields = array_merge( $this->fields, $fields );
+//	}
 
 	/**
 	 * Get single value by field id
