@@ -55,6 +55,11 @@ $testimonial_mb_fields = array(
 		'type'	 => 'textarea',
 		'title'	 => 'Description',
 	),
+	array(
+		'id'	 => 'testimonial-bg',
+		'type'	 => 'color',
+		'title'	 => 'Background Color',
+	),
 );
 
 $testimonial_meta_box = new MBDL_Meta_Box( 'testimonial', $testimonial_mb_options, $testimonial_mb_fields );
