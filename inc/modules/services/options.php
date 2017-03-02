@@ -12,7 +12,7 @@ if ( !function_exists( 'mbtheme_services_options' ) ) {
 			'desc'	 => '',
 			'icon'	 => 'el el-bulb',
 		) );
-		
+
 		for ( $i = 1; $i <= 4; $i++ ) {
 
 			Redux::setSection( $opt_name, array(
@@ -33,10 +33,10 @@ if ( !function_exists( 'mbtheme_services_options' ) ) {
 						'validate'	 => 'no_html',
 					),
 					array(
-						'id'		 => 'service-url-' . $i,
-						'type'		 => 'text',
-						'title'		 => 'URL',
-						'validate'	 => 'url',
+						'id'		 => 'service-page-' . $i,
+						'type'		 => 'select',
+						'title'		 => 'Page',
+						'data'		 => 'page',
 					),
 					array(
 						'id'	 => 'service-icon-' . $i,
