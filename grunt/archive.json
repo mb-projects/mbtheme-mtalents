@@ -1,0 +1,20 @@
+{
+    "archive_dir": "../release",
+    "release": [ 
+        "assets/**",
+        "inc/**",
+        "languages/**",
+        "*.php",
+        "style.css",
+        "screenshot.*"
+    ],
+    "dev": [ 
+        "assets/**",
+        "inc/**",
+        "languages/**",
+        "src/**",
+        "*",
+        "style.css",
+        "screenshot.*"
+    ]
+}
