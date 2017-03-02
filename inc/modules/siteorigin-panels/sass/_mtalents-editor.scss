@@ -1,0 +1,15 @@
+.mtalents-widget{
+    &-title{
+        @include font-size(1.875);
+        font-family: $font-family-proxima-nova;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #313030;
+        >span{
+            color: $brand-color-1;
+        }
+    }
+    &-content{
+        
+    }
+}

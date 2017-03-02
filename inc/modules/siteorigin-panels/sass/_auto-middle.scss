@@ -1,0 +1,12 @@
+@media(min-width: 768px){
+    .panel-row-style-auto-middle{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        .panel-grid-cell{
+            display: table-cell;
+            vertical-align: middle;
+            float: none !important;
+        }
+    }
+}
