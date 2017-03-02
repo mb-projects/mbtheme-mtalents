@@ -3,7 +3,7 @@
 if ( !class_exists( 'SiteOrigin_Widget' ) )
 	return;
 
-class MBTheme_Mtalents_Editor_Widget extends SiteOrigin_Widget {
+class MBTheme_MTalents_Editor_Widget extends SiteOrigin_Widget {
 
 	function __construct() {
 		parent::__construct( 'mtalents-editor', 'MTalents Editor', array( 'description' => '' ), array(), array(), plugin_dir_path( __FILE__ ) );
@@ -34,4 +34,4 @@ class MBTheme_Mtalents_Editor_Widget extends SiteOrigin_Widget {
 
 }
 
-siteorigin_widget_register( 'mtalents-editor', __FILE__, 'MBTheme_Mtalents_Editor_Widget' );
+siteorigin_widget_register( 'mtalents-editor', __FILE__, 'MBTheme_MTalents_Editor_Widget' );
