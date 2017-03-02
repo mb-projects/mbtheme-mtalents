@@ -91,6 +91,10 @@ class MBDL_Admin_Form {
 		return $this->fields;
 	}
 
+	public function setValues( $values = array() ) {
+		$this->values = (array) $values;
+	}
+
 	/**
 	 * Render all fields
 	 */
