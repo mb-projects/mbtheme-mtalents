@@ -1,0 +1,35 @@
+.mtalents-media{
+    margin-bottom: 30px;
+    &-image{
+        text-align: center;
+    }
+    &-content{
+        &-inner{
+            padding: 20px;
+            background-color: #f7f9f9;
+        }
+    }
+    @media(min-width: $screen-sm-min){
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        &-image, &-content{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &-image{
+            width: 250px;
+        }
+        &-content{
+            &-inner{
+                padding: 35px 8%;
+            }
+        }
+        
+    }
+    @media(min-width: $screen-md-min){
+        &-image{
+            width: 280px;
+        }
+    }
+}

@@ -4,7 +4,7 @@ ul.list-style-dots{
     li{
         position: relative;
         margin-bottom: 10px;
-        padding-left: 20px;
+        padding-left: 25px;
         &:before{
             content: "\f111";
             position: absolute;
@@ -71,5 +71,10 @@ ul.list-style-square{
         }
     }
 }
-ul.list-style-square-1 li, li.list-style-square-1{
+ul.list-col-2{
+    @media(min-width: $screen-lg-min){
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
 }
