@@ -14,4 +14,4 @@ if ( !function_exists( 'mbtheme_comments_template' ) ) {
 
 }
 
-add_action( 'mbtheme_site_comments', 'mbtheme_comments_template' );
+//add_action( 'mbtheme_site_comments', 'mbtheme_comments_template' );
