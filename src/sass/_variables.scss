@@ -9,7 +9,7 @@ $brand-primary: $brand-color-1;
 
 $text-color: #606060;
 
-$link-color: $brand-color-2;
+$link-color: $brand-color-1;
 $link-hover-decoration: none;
 
 // type
@@ -28,9 +28,9 @@ $navbar-inverse-color: #fff;
 $navbar-inverse-border: transparent;
 
 $navbar-inverse-link-color: $navbar-inverse-color;
-$navbar-inverse-link-hover-color: $link-color;
+$navbar-inverse-link-hover-color: $brand-color-2;
 
-$navbar-inverse-link-active-color: $link-color;
+$navbar-inverse-link-active-color: $brand-color-2;
 
 $navbar-inverse-toggle-hover-bg:            transparent !default;
 $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
@@ -39,3 +39,12 @@ $navbar-inverse-toggle-border-color:        transparent !default;
 // forms
 $input-border-radius: 0;
 $input-height-base: 45px;
+
+// buttons
+$btn-default-color: #fff;
+$btn-default-bg: #606060;
+$btn-default-border: #606060;
+
+$btn-border-radius-base: 38px;
+$btn-border-radius-large: 48px;
+$btn-border-radius-small: 33px;

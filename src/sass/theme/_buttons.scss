@@ -1,0 +1,9 @@
+.btn{
+    padding-left: 18px;
+    padding-right: 18px;
+    @include transition(all 0.3s);
+    @include box-shadow(0 5px 10px rgba(#606060, 0.35));
+    &:hover, &:focus{
+        @include box-shadow(0 8px 15px rgba(#606060, 0.35));        
+    }
+}

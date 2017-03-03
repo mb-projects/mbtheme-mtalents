@@ -2,9 +2,9 @@ a{
     @include transition(color 0.3s);
 }
 
-.site-content-area{
+.site-header, .site-footer{
     a{
-        color: $brand-color-1;
+        color: $brand-color-2;
         &:hover, &:focus{
             color: darken($brand-color-2, 10%);
 
