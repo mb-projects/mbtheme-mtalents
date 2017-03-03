@@ -61,8 +61,11 @@ $screen-archive-breakpoint: 650px;
     .entry-readmore{
         margin-top: 15px;
         margin-bottom: 15px;
-        color: $text-color;            
+        color: $text-color;           
+        border-color: #ddd;
+        background-color: transparent;
         @include transition(all 0.3s);
+        @include box-shadow(none);
         &:hover, &:focus{
             border-color: transparent;
             background-color: $brand-color-1;

@@ -6,4 +6,8 @@
     &:hover, &:focus{
         @include box-shadow(0 8px 15px rgba(#606060, 0.35));        
     }
+    &-lg{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
