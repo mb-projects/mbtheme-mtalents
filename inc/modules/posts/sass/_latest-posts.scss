@@ -1,0 +1,33 @@
+.mbtheme-latest-post{
+    width: 360px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    background-color: #f7f9f9;
+    border-radius: 5px;
+    &-image{
+        padding-top: 65%;
+        border-radius: 5px 5px 0 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-content{
+        min-height: 120px;
+        padding: 20px;
+        h4{
+            line-height: 1.5;
+            @include font-size(1);
+        }
+        a{
+            color: #4d4c4c;
+            &:hover, &:focus{
+                color: $link-color;
+            }
+        }
+    }
+    &-date{
+        margin-bottom: 5px;
+        @include font-size(0.75);
+        color: #a2a216;
+    }
+}
