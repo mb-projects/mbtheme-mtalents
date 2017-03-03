@@ -1,0 +1,75 @@
+ul.list-style-dots{
+    padding-left: 0;
+    list-style: none;
+    li{
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        &:before{
+            content: "\f111";
+            position: absolute;
+            @include fa;
+            top: 0;
+            left: 0;
+            font-size: 40%;
+            line-height: $line-height-base * 2.5;
+            color: $brand-color-1;
+        }
+    }
+}
+
+ul.list-style-square{
+    padding-left: 0;
+    list-style: none;
+    li{
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 30px;
+        &:before{
+            content: " ";
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 14px;
+            height: 13px;
+            background-image: url("../images/list-square.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+    &.list-style-square-lg{
+        @include font-size(1.125);
+        li{
+            padding-left: 40px;
+            margin-bottom: 12px;
+            &:before{
+                top: 3px;
+                width: 21px;
+                height: 20px;
+            }
+        }
+    }
+    &.list-style-square-1 li, li.list-style-square-1{
+        &:before{
+            background-position-y: 0;        
+        }
+    }
+    &.list-style-square-2 li, li.list-style-square-2{
+        &:before{
+            background-position-y: 33.33%;
+        }
+    }
+    &.list-style-square-3 li, li.list-style-square-3{
+        &:before{
+            background-position-y: 66.66%;
+        }
+    }
+    &.list-style-square-4 li, li.list-style-square-4{
+        &:before{
+            background-position-y: 100%;
+        }
+    }
+}
+ul.list-style-square-1 li, li.list-style-square-1{
+}
