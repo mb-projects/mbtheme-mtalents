@@ -25,11 +25,29 @@
                 padding: 35px 8%;
             }
         }
-        
+
     }
     @media(min-width: $screen-md-min){
         &-image{
             width: 280px;
+        }
+    }
+    &-image-right{
+        display: none;
+    }
+}
+.mtalents-media-right{
+    .mtalents-media-image{
+        @media(min-width: $screen-sm-min){
+            display: none;
+        }
+        &-right{
+            .img-border{
+                margin: 0 0 20px 20px;
+            }
+            @media(min-width: $screen-sm-min){
+                display: table-cell;
+            }
         }
     }
 }
