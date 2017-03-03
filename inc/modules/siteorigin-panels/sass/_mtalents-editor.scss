@@ -2,11 +2,8 @@
     &-title{
         @include font-size(1.875);
         line-height: 1.2;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         color: #313030;
-        >span{
-            color: $brand-color-1;
-        }
     }
     &-content{
         
