@@ -5,7 +5,6 @@
         margin-bottom: 20px;
         @include font-size(1.5);
         color: $brand-color-2;
-        font-family: $font-family-open-sans;
     }
 }
 
@@ -13,7 +12,6 @@ ul.contact-list{
     display: inline-block;
     padding: 0;
     list-style: none;
-    font-family: $font-family-proxima-nova;
     text-align: initial;
     >li{
         position: relative;
