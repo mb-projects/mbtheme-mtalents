@@ -14,6 +14,3 @@ $image		 = wp_get_attachment_image( $image_id, 'full', false, array( 'class' => 
 		</div>
 	</div>
 </div>
-
-<?php
-var_dump( $instance );
