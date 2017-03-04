@@ -28,4 +28,15 @@
     width: 800px;
     max-width: 100%;
     margin: 0 auto;
+    &-header{
+        margin-bottom: 30px;
+        text-align: center;
+        h2{
+            margin-bottom: 10px;
+            color: $brand-color-1;
+        }
+    }
+    .testimonial-panel{
+        margin-bottom: 30px;
+    }
 }

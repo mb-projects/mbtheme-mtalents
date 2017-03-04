@@ -1,5 +1,4 @@
 <?php
-
 if ( !function_exists( 'mbtheme_testimonial_post_display' ) ) {
 
 	/**
@@ -24,8 +23,16 @@ if ( !function_exists( 'mbtheme_testimonial_post_display' ) ) {
 		// itearate all testimonials
 		$testimonials_id_arr = explode( ',', $testimonials_id );
 		echo '<div class="post-testimonials">';
-		foreach ( $testimonials_id_arr as $id ) {
-			mbtheme_module_template( 'testimonials', 'panel', '', array( 'testimonial_id' => $id ) );
+		if ( $testimonials_id_arr ) {
+			?>
+			<div class="post-testimonials-header">
+				<h2>Des clients contents</h2>
+				<p>Ils nous ont fait confiance et ont accepté de témoigner... Nous vous en remercions!</p>
+			</div>
+			<?php
+			foreach ( $testimonials_id_arr as $id ) {
+				mbtheme_module_template( 'testimonials', 'panel', '', array( 'testimonial_id' => $id ) );
+			}
 		}
 		echo '</div>';
 	}

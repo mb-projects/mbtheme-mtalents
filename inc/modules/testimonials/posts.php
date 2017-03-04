@@ -28,7 +28,7 @@ $testimonial_args = array(
 	'labels'	 => $testimonial_labels,
 	'public'	 => false,
 	'show_ui'	 => true,
-	'menu_icon'	 => 'dashicons-admin-post',
+	'menu_icon'	 => 'dashicons-format-quote',
 	'supports'	 => array( 'title', 'thumbnail' ),
 	'taxonomies' => array(),
 );
