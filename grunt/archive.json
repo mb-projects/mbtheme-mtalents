@@ -1,5 +1,5 @@
 {
-    "archive_dir": "../release",
+    "archive_dir": "e:/web/archives/projects/2017/02",
     "release": [ 
         "assets/**",
         "inc/**",
