@@ -17,3 +17,15 @@ select,
 textarea{
     @extend .form-control;
 }
+
+
+select{
+    padding-right: 23px;
+    background-image: url('../images/caret.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
