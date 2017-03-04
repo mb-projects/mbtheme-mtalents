@@ -46,3 +46,58 @@
         left: 0;
     }
 }
+
+.text-dark{
+    color: $text-dark;
+}
+
+.section-title-square{
+    text-align: center;
+    margin-bottom: 25px;
+    >h3{
+        display: inline-block;
+        position: relative;
+        @media(min-width: $screen-xs-min){
+            padding: 0 40px;
+        }
+        @include font-size(1.875);
+        font-weight: bold;
+        &:before, &:after{
+            @media(min-width: $screen-xs-min){
+                content: " ";
+            }
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 21px;
+            height: 20px;
+            background-image: url("../images/list-square.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:after{
+            left: auto;
+            right: 0;
+        }
+    }
+    &-1 > h3{
+        &:before, &:after{
+            background-position-y: 0;
+        }
+    }
+    &-2 > h3{
+        &:before, &:after{
+            background-position-y: 33.33%;
+        }
+    }
+    &-3 > h3{
+        &:before, &:after{
+            background-position-y: 66.66%;
+        }
+    }
+    &-4 > h3{
+        &:before, &:after{
+            background-position-y: 100%;
+        }
+    }
+}
