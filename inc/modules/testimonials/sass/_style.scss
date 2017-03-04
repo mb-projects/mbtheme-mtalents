@@ -1,6 +1,6 @@
 .testimonial-panel{
     margin-bottom: 20px;
-    padding: 30px;
+    padding: 30px 7%;
     border-radius: 8px;
     background-color: $brand-color-1;
     color: #fff;
@@ -22,4 +22,10 @@
         }
     }
     
+}
+
+.post-testimonials{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
 }

@@ -63,3 +63,15 @@ $testimonial_mb_fields = array(
 );
 
 $testimonial_meta_box = new MBDL_Meta_Box( 'testimonial', $testimonial_mb_options, $testimonial_mb_fields );
+
+
+$post_testimonial_meta_box = new MBDL_Meta_Box( 'post_testimonial', array(
+	'title'	 => 'Testimonials',
+	'screen' => 'post'
+), array(
+	array(
+		'id'	 => 'testimonials_id',
+		'type'	 => 'text',
+		'title'	 => 'Testimonials ID',
+	)
+) );
