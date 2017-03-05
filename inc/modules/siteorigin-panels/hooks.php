@@ -53,3 +53,18 @@ if ( !function_exists( 'mbtheme_siteorigin_panels_widget_classes' ) ) {
 }
 
 add_filter( 'siteorigin_panels_widget_classes', 'mbtheme_siteorigin_panels_widget_classes', 10, 4 );
+
+if ( !function_exists( 'mbtheme_clearfix_so_panels_widget_classes' ) ) {
+
+    function mbtheme_clearfix_so_panels_widget_classes( $classes, $widget, $instance, $widget_info ) {
+        if ( $widget !== 'MBTheme_Clearfix_Widget' ) {
+            return $classes;
+        }
+        $classes = array( 'clearfix' );
+        $classes[] = $instance[ 'clearfix_class' ];
+        return $classes;
+    }
+
+}
+
+add_filter( 'siteorigin_panels_widget_classes', 'mbtheme_clearfix_so_panels_widget_classes', 10, 4 );
