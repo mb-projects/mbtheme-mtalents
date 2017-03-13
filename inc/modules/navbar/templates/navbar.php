@@ -3,7 +3,7 @@
  * Main navbar template
  */
 ?>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" id="site_navbar_top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site_navbar" aria-expanded="false">

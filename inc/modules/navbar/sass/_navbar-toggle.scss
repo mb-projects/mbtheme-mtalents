@@ -1,6 +1,7 @@
 button.navbar-toggle{
     padding: 9px 10px;
     background-color: transparent;
+    border: none;
     @media (min-width: $grid-float-breakpoint) {
         display: none;
     }

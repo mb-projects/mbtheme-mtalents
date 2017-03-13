@@ -1,0 +1,30 @@
+#navbar_fixed_top{
+    top: (-$navbar-height - 10);
+    @include material-shadow(2);
+    @include transition(all 0.3s);
+    &.show{
+	top: 0;
+    }
+}
+
+body.admin-bar{
+    #navbar_fixed_top{
+	&.show{
+	    @media(min-width: 600px){
+		top: 46px;
+	    }
+	    @media(min-width: 783px){
+		top: 32px;
+	    }
+	}
+    }
+}
+
+#site_navbar_top{
+    min-height: 100px;
+    .navbar-brand{
+	height: 100px;
+    }
+    .site-primary-menu{
+    }
+}

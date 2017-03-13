@@ -21,8 +21,22 @@ $font-family-open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-se
 $font-family-base: $font-family-open-sans;
 
 // navbar
-$navbar-height: 100px;
+$navbar-height: 70px;
 $navbar-margin-bottom: 20px;
+
+$navbar-default-bg: rgba(#6a6868, 0.95);
+$navbar-default-color: #fff;
+$navbar-default-border: transparent;
+
+$navbar-default-link-color: $navbar-default-color;
+$navbar-default-link-hover-color: $brand-color-2;
+
+$navbar-default-link-active-color: $brand-color-2;
+$navbar-default-link-active-bg: transparent;
+
+$navbar-default-toggle-hover-bg: transparent !default;
+$navbar-default-toggle-icon-bar-bg:#fff !default;
+$navbar-default-toggle-border-color: transparent !default;
 
 $navbar-inverse-bg: transparent;
 $navbar-inverse-color: #fff;
@@ -33,9 +47,9 @@ $navbar-inverse-link-hover-color: $brand-color-2;
 
 $navbar-inverse-link-active-color: $brand-color-2;
 
-$navbar-inverse-toggle-hover-bg:            transparent !default;
-$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
-$navbar-inverse-toggle-border-color:        transparent !default;
+$navbar-inverse-toggle-hover-bg: transparent !default;
+$navbar-inverse-toggle-icon-bar-bg:#fff !default;
+$navbar-inverse-toggle-border-color: transparent !default;
 
 // forms
 $input-border-radius: 0;
