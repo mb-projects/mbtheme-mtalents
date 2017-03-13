@@ -1,12 +1,26 @@
-@media(min-width: 768px){
-    .panel-row-style-auto-middle{
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        .panel-grid-cell{
-            display: table-cell;
-            vertical-align: middle;
-            float: none !important;
-        }
+.panel-grid {
+    @media(min-width: $screen-sm-min){
+	.panel-row-style-auto-middle{
+	    display: table;
+	    table-layout: fixed;
+	    width: 100%;
+	    >.panel-grid-cell{
+		display: table-cell;
+		vertical-align: middle;
+		float: none !important;
+	    }
+	}
+    }
+    @media(min-width: $screen-md-min){
+	.panel-cell-style.auto-middle-md{
+	    display: table;
+	    table-layout: fixed;
+	    width: 100%;
+	    >.so-panel{
+		display: table-cell;
+		vertical-align: middle;
+		float: none !important;
+	    }
+	}
     }
 }
