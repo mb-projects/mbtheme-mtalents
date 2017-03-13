@@ -1,9 +1,18 @@
 // footer links
-.social-links-footer{
+.social-links{
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
     li{
         display: inline-block;
+        margin-right: 10px;
+        >a{
+        }
+    }
+}
+.social-links-footer{
+    margin-bottom: 15px;
+    li{
         @include font-size(1.625);
         margin-right: 15px;
         >a{
