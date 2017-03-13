@@ -1,17 +1,18 @@
-$submenu-width: 220px !default;
-$submenu-padding: 5px 0 !default;
+$submenu-width: 230px !default;
+$submenu-padding: 5px 0 0 !default;
 
-$submenu-link-padding: 5px 15px !default;
+$submenu-link-padding: 10px 15px !default;
 $submenu-link-padding-sm: 10px 15px !default;
 $submenu-link-decoration: none !default;
-$submenu-link-color: #777 !default;
-$submenu-link-color-hover: #555 !default;
-$submenu-link-bg-hover: #eee !default;
+$submenu-link-color: #070707 !default;
+$submenu-link-color-hover: $link-color !default;
+$submenu-link-bg-hover: transparent !default;
 
 .mbtheme-navbar-nav{
     ul.sub-menu{
         display: none;
         //display: block;
+	@include font-size(0.9375);
         @media(min-width: $grid-float-breakpoint){
             position: absolute;
             left: 0;
@@ -27,18 +28,30 @@ $submenu-link-bg-hover: #eee !default;
             >a{
                 display: block;
                 padding: $submenu-link-padding;
-                @media(max-width: $grid-float-breakpoint-max){
-                    line-height: $line-height-computed;
-                    padding: $submenu-link-padding-sm;
-                    padding-left: 25px;
-                }
-                color: $submenu-link-color;
+		border-bottom: solid 1px #eee;
+		color: $submenu-link-color;
                 text-decoration: $submenu-link-decoration;
                 &:hover, &:focus{
                     background-color: $submenu-link-bg-hover;
                     color: $submenu-link-color-hover;
                 }
+                @media(max-width: $grid-float-breakpoint-max){
+                    line-height: $line-height-computed;
+                    padding: $submenu-link-padding-sm;
+                    padding-left: 25px;
+		    border-bottom: none;
+		    color: #fff;
+		    &:hover, &:focus{
+			color: $brand-color-2;
+		    }
+		    &.current-menu-item{
+			color: $brand-color-2;
+		    }
+                }
             }
+	    &.current-menu-item>a{
+		color: $brand-color-1;
+	    }
         }
         @media(min-width: $grid-float-breakpoint){
             display: none !important;
@@ -94,11 +107,11 @@ $submenu-link-bg-hover: #eee !default;
                 text-align: center;
                 line-height: $line-height-computed;
                 font-size: 120%;
-                background-color: rgba(0,0,0,0.05);
+                background-color: rgba(0,0,0,0.3);
             }
             &:hover, &:focus{
                 &:after{
-                    background-color: rgba(0,0,0,0.1);
+                    background-color: rgba(0,0,0,0.5);
                 }
             }
         }
@@ -130,5 +143,49 @@ $submenu-link-bg-hover: #eee !default;
     ul.sub-menu li.menu-item-has-children > ul.sub-menu{
         right: 100%;
         left: auto;
+    }
+}
+
+@-webkit-keyframes submenuFadeInRight {
+    0% {
+	opacity: 0;
+	-webkit-transform: translateX(20px);
+	transform: translateX(20px);
+    }
+
+    100% {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+    }
+}
+
+@keyframes submenuFadeInRight {
+    0% {
+	opacity: 0;
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+    }
+
+    100% {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+    }
+}
+
+// animation
+.mbtheme-navbar-nav{
+    ul.sub-menu{
+	@media(min-width: $grid-float-breakpoint){
+	    -webkit-animation-name: submenuFadeInRight;
+	    animation-name: submenuFadeInRight;
+	    -webkit-animation-duration: 0.3s;
+	    animation-duration: 0.3s;
+	    -webkit-animation-fill-mode: both;
+	    animation-fill-mode: both;
+	}
     }
 }
