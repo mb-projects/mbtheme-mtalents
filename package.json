@@ -1,6 +1,6 @@
 {
   "name": "mtalents",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "M-Talents project",
   "main": "index.php",
   "scripts": {
