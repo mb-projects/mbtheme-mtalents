@@ -23,10 +23,16 @@ if ( !function_exists( 'mbtheme_header_options' ) ) {
                     'title' => 'Blog Header Background',
                 ),
                 array(
+                    'id' => 'header-front-slide-content',
+                    'type' => 'textarea',
+                    'title' => 'Front Header Slide Content',
+                    'description' => 'Separated by new line',
+                    'validate' => 'html',
+                ),
+                array(
                     'id' => 'header-front-content',
                     'type' => 'textarea',
                     'title' => 'Front Header Content',
-                    'description' => 'Separated by new line',
                     'validate' => 'html',
                 ),
                 array(

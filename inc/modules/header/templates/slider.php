@@ -7,7 +7,7 @@ $pause = (mbtheme_get_option( 'header-front-slide-pause', '0' )) ? 'hover' : 'nu
 <div id="header_banner_slider" class="carousel slide" data-ride="carousel" data-interval="<?php echo esc_attr( $interval ); ?>" data-pause="<?php echo esc_attr( $pause ); ?>">
     <div class="carousel-inner" role="listbox">
         <?php
-        $contents = mbtheme_get_option( 'header-front-content', '' );
+        $contents = mbtheme_get_option( 'header-front-slide-content', '' );
         $contents_ = explode( "\n", $contents );
         $i = 1;
         foreach ( $contents_ as $content ) {
@@ -21,4 +21,5 @@ $pause = (mbtheme_get_option( 'header-front-slide-pause', '0' )) ? 'hover' : 'nu
         }
         ?>
     </div>
+    <?php echo mbtheme_get_option( 'header-front-content', '' ); ?>
 </div>
