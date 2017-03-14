@@ -3,6 +3,7 @@
         "src/js/script.js",
         "inc/modules/posts/js/script.js",
         "inc/modules/comments/js/script.js",
+        "inc/modules/header/js/script.js",
         "inc/modules/navbar/js/script.js"
     ]
 }
